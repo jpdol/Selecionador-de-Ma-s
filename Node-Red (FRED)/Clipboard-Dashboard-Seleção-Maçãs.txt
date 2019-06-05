@@ -1,0 +1,166 @@
+[
+    {
+        "id": "579462d9.d5954c",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "14347e0d.f28ba2",
+        "type": "mqtt in",
+        "z": "579462d9.d5954c",
+        "name": "",
+        "topic": "/dse/maca/podre",
+        "qos": "0",
+        "broker": "563c42e6.28831c",
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "5642a96f.85b528"
+            ]
+        ]
+    },
+    {
+        "id": "cbd87cc0.65dc7",
+        "type": "mqtt in",
+        "z": "579462d9.d5954c",
+        "name": "",
+        "topic": "/dse/maca/boas",
+        "qos": "0",
+        "broker": "563c42e6.28831c",
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "8f1e1fdf.8b1ba"
+            ]
+        ]
+    },
+    {
+        "id": "5642a96f.85b528",
+        "type": "ui_chart",
+        "z": "579462d9.d5954c",
+        "name": "",
+        "group": "beb3399d.e1d5c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Podres",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "x": 580,
+        "y": 240,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8f1e1fdf.8b1ba",
+        "type": "ui_chart",
+        "z": "579462d9.d5954c",
+        "name": "",
+        "group": "beb3399d.e1d5c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Boas",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "x": 567,
+        "y": 301,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "563c42e6.28831c",
+        "type": "mqtt-broker",
+        "z": null,
+        "name": "eclipse",
+        "broker": "iot.eclipse.org",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "beb3399d.e1d5c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Dados",
+        "tab": "65bd64df.33250c",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "65bd64df.33250c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Dashboard",
+        "icon": "Dashboard",
+        "order": 2
+    }
+]
